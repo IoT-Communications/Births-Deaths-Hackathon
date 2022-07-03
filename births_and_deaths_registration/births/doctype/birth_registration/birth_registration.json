@@ -1,0 +1,537 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-06-30 23:08:54.538220",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "posting_date",
+  "particulars_of_declarant_section",
+  "declarant_name",
+  "relation_to_child",
+  "identity_document_of_declarant",
+  "column_break_7",
+  "declarant_surname",
+  "email",
+  "column_break_10",
+  "declarant_identity",
+  "mobile_number",
+  "details_of_the_child_section",
+  "names_given",
+  "date_of_birth",
+  "district",
+  "gestation_period_weeks",
+  "column_break_15",
+  "surname",
+  "birth_status",
+  "city_town_village",
+  "result_of_delivery",
+  "column_break_20",
+  "gender",
+  "child_weight",
+  "hospital_other",
+  "child_birth_looks",
+  "particulars_of_mother_section",
+  "mothers_full_name",
+  "mother_dob",
+  "mother_address",
+  "column_break_29",
+  "mother_nationaity",
+  "mother_identity",
+  "mother_education",
+  "column_break_33",
+  "mother_marital_status",
+  "identity_document_of_mother",
+  "mother_occupation",
+  "particulars_of_father_section",
+  "fathers_full_name",
+  "father_dob",
+  "father_address",
+  "column_break_41",
+  "father_nationaity",
+  "father_identity",
+  "father_education",
+  "column_break_45",
+  "father_marital_status",
+  "identity_document_of_father",
+  "father_occupation",
+  "supporting_documents_section",
+  "birth_notification_form",
+  "confirmation_letter_from_the_hospital",
+  "under_5_medical_card",
+  "column_break_53",
+  "statement__affidavit_from_parents_or_guardians",
+  "statement__affidavit_from_2_witnesses",
+  "identity_document_of_witness_1",
+  "column_break_57",
+  "identity_document_of_witness_2",
+  "confirmation_letter_from_kgosi",
+  "extract_from_school_admission_record",
+  "declaration_section",
+  "declaration",
+  "payment_details_section",
+  "application_fee",
+  "payment_gateway",
+  "currency",
+  "payment_url",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Birth Registration",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Application Number",
+   "options": "BRA-.MM.-.YYYY.-.#####"
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "Application Date"
+  },
+  {
+   "fieldname": "particulars_of_declarant_section",
+   "fieldtype": "Section Break",
+   "label": "Particulars of Declarant"
+  },
+  {
+   "fieldname": "declarant_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "declarant_identity",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Identity / Passport Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "relation_to_child",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Relation to Child",
+   "options": "\nMother\nFather\nSister\nBrother\nGuardian",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "declarant_surname",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Surname",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "details_of_the_child_section",
+   "fieldtype": "Section Break",
+   "label": "Particulars of Birth"
+  },
+  {
+   "fieldname": "names_given",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Given Names",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date of Birth",
+   "reqd": 1
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Link",
+   "label": "District",
+   "options": "District",
+   "reqd": 1
+  },
+  {
+   "fieldname": "gestation_period_weeks",
+   "fieldtype": "Int",
+   "label": "Gestation Period (Weeks)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "surname",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Surname",
+   "reqd": 1
+  },
+  {
+   "fieldname": "birth_status",
+   "fieldtype": "Select",
+   "label": "Birth Status",
+   "options": "\nBorn Alive\nStill Born",
+   "reqd": 1
+  },
+  {
+   "fieldname": "city_town_village",
+   "fieldtype": "Link",
+   "label": "City / Town / Village",
+   "options": "City Town Village",
+   "reqd": 1
+  },
+  {
+   "fieldname": "result_of_delivery",
+   "fieldtype": "Select",
+   "label": "Result of Delivery",
+   "options": "\nSingle\nMultiple",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_20",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Gender",
+   "options": "\nMale\nFemale",
+   "reqd": 1
+  },
+  {
+   "fieldname": "child_weight",
+   "fieldtype": "Float",
+   "label": "Weight of Child (Kg)",
+   "precision": "1",
+   "reqd": 1
+  },
+  {
+   "fieldname": "hospital_other",
+   "fieldtype": "Data",
+   "label": "Hospital / Other",
+   "reqd": 1
+  },
+  {
+   "fieldname": "child_birth_looks",
+   "fieldtype": "Select",
+   "label": "Did child look normal after birth?",
+   "options": "\nYes\nNo",
+   "reqd": 1
+  },
+  {
+   "fieldname": "particulars_of_mother_section",
+   "fieldtype": "Section Break",
+   "label": "Particulars of Mother"
+  },
+  {
+   "fieldname": "mothers_full_name",
+   "fieldtype": "Data",
+   "label": "Full Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mother_dob",
+   "fieldtype": "Date",
+   "label": "Date of Birth"
+  },
+  {
+   "fieldname": "mother_address",
+   "fieldtype": "Data",
+   "label": "Physical Address"
+  },
+  {
+   "fieldname": "column_break_29",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mother_nationaity",
+   "fieldtype": "Link",
+   "label": "Nationality",
+   "options": "Nationality"
+  },
+  {
+   "fieldname": "mother_identity",
+   "fieldtype": "Data",
+   "label": "Identity / Passport Number"
+  },
+  {
+   "fieldname": "mother_education",
+   "fieldtype": "Select",
+   "label": "Level of Education",
+   "options": "\nPrimary\nSecondary\nPost Secondary\nHigher"
+  },
+  {
+   "fieldname": "column_break_33",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mother_marital_status",
+   "fieldtype": "Select",
+   "label": "Marital Status",
+   "options": "\nSingle\nMarried\nDivorced\nWidowed"
+  },
+  {
+   "fieldname": "identity_document_of_mother",
+   "fieldtype": "Attach",
+   "label": "Identity Document"
+  },
+  {
+   "fieldname": "mother_occupation",
+   "fieldtype": "Data",
+   "label": "Occupation"
+  },
+  {
+   "fieldname": "particulars_of_father_section",
+   "fieldtype": "Section Break",
+   "label": "Particulars of Father"
+  },
+  {
+   "fieldname": "fathers_full_name",
+   "fieldtype": "Data",
+   "label": "Full Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "father_dob",
+   "fieldtype": "Date",
+   "label": "Date of Birth"
+  },
+  {
+   "fieldname": "father_address",
+   "fieldtype": "Data",
+   "label": "Physical Address"
+  },
+  {
+   "fieldname": "column_break_41",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "father_nationaity",
+   "fieldtype": "Link",
+   "label": "Nationality",
+   "options": "Nationality"
+  },
+  {
+   "fieldname": "father_identity",
+   "fieldtype": "Data",
+   "label": "Identity / Passport Number"
+  },
+  {
+   "fieldname": "father_education",
+   "fieldtype": "Select",
+   "label": "Level of Education",
+   "options": "\nPrimary\nSecondary\nPost Secondary\nHigher"
+  },
+  {
+   "fieldname": "column_break_45",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "father_marital_status",
+   "fieldtype": "Select",
+   "label": "Marital Status",
+   "options": "\nSingle\nMarried\nDivorced\nWidowed"
+  },
+  {
+   "fieldname": "identity_document_of_father",
+   "fieldtype": "Attach",
+   "label": "Identity Document"
+  },
+  {
+   "fieldname": "father_occupation",
+   "fieldtype": "Data",
+   "label": "Occupation"
+  },
+  {
+   "fieldname": "supporting_documents_section",
+   "fieldtype": "Section Break",
+   "label": "Other Supporting Documents"
+  },
+  {
+   "fieldname": "birth_notification_form",
+   "fieldtype": "Attach",
+   "label": "Birth Notification Form"
+  },
+  {
+   "fieldname": "confirmation_letter_from_the_hospital",
+   "fieldtype": "Attach",
+   "label": "Confirmation Letter from the Hospital"
+  },
+  {
+   "fieldname": "under_5_medical_card",
+   "fieldtype": "Attach",
+   "label": "Under 5 Medical Card"
+  },
+  {
+   "fieldname": "column_break_53",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "statement__affidavit_from_parents_or_guardians",
+   "fieldtype": "Attach",
+   "label": "Statement / Affidavit from Parents or Guardians"
+  },
+  {
+   "fieldname": "statement__affidavit_from_2_witnesses",
+   "fieldtype": "Attach",
+   "label": "Statement / Affidavit from 2 Witnesses"
+  },
+  {
+   "fieldname": "identity_document_of_witness_1",
+   "fieldtype": "Attach",
+   "label": "Identity Document of Witness 1"
+  },
+  {
+   "fieldname": "column_break_57",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "confirmation_letter_from_kgosi",
+   "fieldtype": "Attach",
+   "label": "Confirmation Letter from Kgosi"
+  },
+  {
+   "fieldname": "identity_document_of_witness_2",
+   "fieldtype": "Attach",
+   "label": "Identity Document of Witness 2"
+  },
+  {
+   "fieldname": "extract_from_school_admission_record",
+   "fieldtype": "Attach",
+   "label": "Extract from School Admission Record"
+  },
+  {
+   "fieldname": "declaration_section",
+   "fieldtype": "Section Break",
+   "label": "Declaration"
+  },
+  {
+   "default": "0",
+   "fieldname": "declaration",
+   "fieldtype": "Check",
+   "label": "I certify that the information furnished in this application is correct."
+  },
+  {
+   "fieldname": "identity_document_of_declarant",
+   "fieldtype": "Attach",
+   "label": "Identity Document"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mobile_number",
+   "fieldtype": "Data",
+   "label": "Contact Number (Mobile)"
+  },
+  {
+   "fieldname": "application_fee",
+   "fieldtype": "Currency",
+   "label": "Application Fee"
+  },
+  {
+   "fieldname": "payment_details_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Payment Details",
+   "read_only": 1
+  },
+  {
+   "default": "Stripe-IoT Communications",
+   "fieldname": "payment_gateway",
+   "fieldtype": "Link",
+   "label": "Payment Gateway",
+   "options": "Payment Gateway"
+  },
+  {
+   "default": "BWP",
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "Currency",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "payment_url",
+   "fieldtype": "Small Text",
+   "label": "Payment Url"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-07-03 16:00:15.703736",
+ "modified_by": "Administrator",
+ "module": "Births",
+ "name": "Birth Registration",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Officer",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Applicant",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "gender",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

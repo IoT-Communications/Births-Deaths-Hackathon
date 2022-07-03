@@ -1,0 +1,39 @@
+{
+ "category": "Modules",
+ "charts": [],
+ "creation": "2022-07-01 16:19:26.538833",
+ "developer_mode_only": 0,
+ "disable_user_customization": 1,
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "extends_another_page": 0,
+ "hide_custom": 0,
+ "icon": "customization",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "label": "Dashboards",
+ "links": [],
+ "modified": "2022-07-01 16:19:58.871412",
+ "modified_by": "Administrator",
+ "module": "System Dashboards",
+ "name": "Dashboards",
+ "owner": "Administrator",
+ "pin_to_bottom": 0,
+ "pin_to_top": 1,
+ "shortcuts": [
+  {
+   "doc_view": "",
+   "label": "Births Dashboard",
+   "link_to": "Births",
+   "type": "Dashboard"
+  },
+  {
+   "doc_view": "",
+   "label": "Deaths Dashboard",
+   "link_to": "Deaths",
+   "type": "Dashboard"
+  }
+ ],
+ "shortcuts_label": "Dashboards"
+}

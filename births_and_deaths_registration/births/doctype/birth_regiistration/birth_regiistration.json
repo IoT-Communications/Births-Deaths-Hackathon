@@ -1,0 +1,218 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-06-30 10:41:30.230949",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "details_of_the_child_section",
+  "name1",
+  "gender",
+  "column_break_4",
+  "surname",
+  "date_of_birth",
+  "place_of_birth_section",
+  "hospital_other",
+  "column_break_9",
+  "district",
+  "details_of_the_parents_section",
+  "fathers_full_name",
+  "mothers_full_name",
+  "column_break_14",
+  "father_nationaity",
+  "mother_nationaity",
+  "supporting_documents_section",
+  "birth_notification_form",
+  "identity_document_of_father",
+  "identity_document_of_mother",
+  "confirmation_letter_from_the_hospital",
+  "under_5_medical_card",
+  "statement__affidavit_from_parents_or_guardians",
+  "column_break_24",
+  "statement__affidavit_from_2_witnesses",
+  "identity_document_of_witness_1",
+  "identity_document_of_witness_2",
+  "confirmation_letter_from_kgosi",
+  "extract_from_school_admission_record",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "details_of_the_child_section",
+   "fieldtype": "Section Break",
+   "label": "Details of the Child"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "Male\nFemale"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "surname",
+   "fieldtype": "Data",
+   "label": "Surname"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of Birth"
+  },
+  {
+   "fieldname": "place_of_birth_section",
+   "fieldtype": "Section Break",
+   "label": "Place of Birth"
+  },
+  {
+   "fieldname": "hospital_other",
+   "fieldtype": "Data",
+   "label": "Hospital / Other"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Data",
+   "label": "District"
+  },
+  {
+   "fieldname": "details_of_the_parents_section",
+   "fieldtype": "Section Break",
+   "label": "Details of the Parents"
+  },
+  {
+   "fieldname": "fathers_full_name",
+   "fieldtype": "Data",
+   "label": "Father's Full Name"
+  },
+  {
+   "fieldname": "mothers_full_name",
+   "fieldtype": "Data",
+   "label": "Mother's Full Name"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "father_nationaity",
+   "fieldtype": "Data",
+   "label": "Nationality"
+  },
+  {
+   "fieldname": "mother_nationaity",
+   "fieldtype": "Data",
+   "label": "Nationality"
+  },
+  {
+   "fieldname": "supporting_documents_section",
+   "fieldtype": "Section Break",
+   "label": "Supporting Documents"
+  },
+  {
+   "fieldname": "birth_notification_form",
+   "fieldtype": "Attach",
+   "label": "Birth Notification Form"
+  },
+  {
+   "fieldname": "identity_document_of_father",
+   "fieldtype": "Attach",
+   "label": "Identity Document of Father"
+  },
+  {
+   "fieldname": "identity_document_of_mother",
+   "fieldtype": "Attach",
+   "label": "Identity Document of Mother"
+  },
+  {
+   "fieldname": "confirmation_letter_from_the_hospital",
+   "fieldtype": "Attach",
+   "label": "Confirmation Letter from the Hospital"
+  },
+  {
+   "fieldname": "under_5_medical_card",
+   "fieldtype": "Attach",
+   "label": "Under 5 Medical Card"
+  },
+  {
+   "fieldname": "statement__affidavit_from_parents_or_guardians",
+   "fieldtype": "Attach",
+   "label": "Statement / Affidavit from Parents or Guardians"
+  },
+  {
+   "fieldname": "column_break_24",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "statement__affidavit_from_2_witnesses",
+   "fieldtype": "Attach",
+   "label": "Statement / Affidavit from 2 Witnesses"
+  },
+  {
+   "fieldname": "identity_document_of_witness_1",
+   "fieldtype": "Attach",
+   "label": "Identity Document of Witness 1"
+  },
+  {
+   "fieldname": "identity_document_of_witness_2",
+   "fieldtype": "Attach",
+   "label": "Identity Document of Witness 2"
+  },
+  {
+   "fieldname": "confirmation_letter_from_kgosi",
+   "fieldtype": "Attach",
+   "label": "Confirmation Letter from Kgosi"
+  },
+  {
+   "fieldname": "extract_from_school_admission_record",
+   "fieldtype": "Attach",
+   "label": "Extract from School Admission Record"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Birth Regiistration",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-06-30 10:41:30.230949",
+ "modified_by": "Administrator",
+ "module": "Births",
+ "name": "Birth Regiistration",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

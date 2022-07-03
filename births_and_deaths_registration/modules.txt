@@ -1,0 +1,4 @@
+Births and Deaths Registration
+System Dashboards
+Births
+Deaths

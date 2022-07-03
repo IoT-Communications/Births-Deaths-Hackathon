@@ -1,0 +1,32 @@
+{
+ "attach_print": 1,
+ "channel": "Email",
+ "creation": "2022-06-30 14:34:07.242726",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Birth Registration",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Good day,\n\n<br><br>\n\nApplication {{ doc.name }} is approved. Please find attached birth certificate.\n\n<br><br>\n\nRegards,\n\n<br><br>",
+ "modified": "2022-07-01 11:28:27.623081",
+ "modified_by": "Administrator",
+ "module": "Births",
+ "name": "Births - Approve",
+ "owner": "Administrator",
+ "print_format": "Birth Certificate",
+ "recipients": [
+  {
+   "condition": "doc.workflow_state == 'Approved'",
+   "receiver_by_role": "Applicant"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 0,
+ "sender": "Admin",
+ "sender_email": "admin@iotcomms.co.bw",
+ "subject": "{{ doc.name }} {{ doc.workflow_state }}",
+ "value_changed": "workflow_state"
+}

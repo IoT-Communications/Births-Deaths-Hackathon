@@ -1,0 +1,26 @@
+{
+ "allow_roles": [
+  {
+   "role": "Applicant"
+  }
+ ],
+ "creation": "2022-07-03 15:55:10.799888",
+ "docstatus": 0,
+ "doctype": "Module Onboarding",
+ "documentation_url": "https://iotcomms.co.bw",
+ "idx": 0,
+ "is_complete": 0,
+ "modified": "2022-07-03 15:55:10.799888",
+ "modified_by": "Administrator",
+ "module": "Births",
+ "name": "Births",
+ "owner": "Administrator",
+ "steps": [
+  {
+   "step": "Introduction to Birth registration"
+  }
+ ],
+ "subtitle": "Birth certificate application",
+ "success_message": "You are ready to create your first registration",
+ "title": "Introduction to Births"
+}

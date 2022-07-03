@@ -1,0 +1,473 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-07-01 10:43:18.884496",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "posting_date",
+  "particulars_of_declarant_section",
+  "declarant_name",
+  "declarant_identity",
+  "relation_to_deceased",
+  "identity_document_of_declarant",
+  "column_break_7",
+  "declarant_surname",
+  "email",
+  "mobile_number",
+  "details_of_death_section",
+  "names_given",
+  "date_of_birth",
+  "district",
+  "deceased_marital_status",
+  "date_of_death",
+  "disease_condition",
+  "column_break_15",
+  "surname",
+  "deceased_identity",
+  "city_town_village",
+  "deceased_education",
+  "duration_of_illness",
+  "morbid_condition",
+  "column_break_20",
+  "gender",
+  "deceased_nationality",
+  "hospital_other",
+  "deceased_occupation",
+  "hospitalization_period",
+  "significant_conditions",
+  "particulars_of_next_of_kin_section",
+  "relative_full_name",
+  "relative_dob",
+  "column_break_29",
+  "relative_nationaity",
+  "relationship",
+  "column_break_33",
+  "relative_identity",
+  "relative_address",
+  "supporting_documents_section",
+  "death_notification_tear_off",
+  "statement__affidavit_from_2_witnesses",
+  "column_break_53",
+  "confirmation_letter_from_kgosi",
+  "identity_document_of_witness_1",
+  "column_break_57",
+  "statement__affidavit_from_declarant",
+  "identity_document_of_witness_2",
+  "declaration_section",
+  "declaration",
+  "payment_details_section",
+  "application_fee",
+  "payment_gateway",
+  "currency",
+  "payment_url",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Application Number",
+   "options": "DRA-.MM.-.YYYY.-.#####"
+  },
+  {
+   "default": "Today",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "Application Date"
+  },
+  {
+   "fieldname": "particulars_of_declarant_section",
+   "fieldtype": "Section Break",
+   "label": "Particulars of Declarant"
+  },
+  {
+   "fieldname": "declarant_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "declarant_identity",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Identity / Passport Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "relation_to_deceased",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Relation to Deceased",
+   "options": "\nMother\nFather\nSister\nBrother\nGuardian",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "declarant_surname",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Surname",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mobile_number",
+   "fieldtype": "Data",
+   "label": "Contact Number (Mobile)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "details_of_death_section",
+   "fieldtype": "Section Break",
+   "label": "Particulars of Death"
+  },
+  {
+   "fieldname": "names_given",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Names",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date of Birth",
+   "reqd": 1
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Link",
+   "label": "District",
+   "options": "District",
+   "reqd": 1
+  },
+  {
+   "fieldname": "deceased_marital_status",
+   "fieldtype": "Select",
+   "label": "Marital Status",
+   "options": "\nSingle\nMarried\nDivorced\nWidowed",
+   "reqd": 1
+  },
+  {
+   "fieldname": "disease_condition",
+   "fieldtype": "Small Text",
+   "label": "Disease or condition leading to death"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "surname",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Surname",
+   "reqd": 1
+  },
+  {
+   "fieldname": "deceased_identity",
+   "fieldtype": "Data",
+   "label": "Identity / Passport Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "city_town_village",
+   "fieldtype": "Link",
+   "label": "City / Town / Village",
+   "options": "City Town Village",
+   "reqd": 1
+  },
+  {
+   "fieldname": "deceased_education",
+   "fieldtype": "Select",
+   "label": "Level of Education",
+   "options": "\nPrimary\nSecondary\nPost Secondary\nHigher",
+   "reqd": 1
+  },
+  {
+   "fieldname": "duration_of_illness",
+   "fieldtype": "Data",
+   "label": "Duration of Illness"
+  },
+  {
+   "fieldname": "morbid_condition",
+   "fieldtype": "Small Text",
+   "label": "Morbid condition if any giving to the above cause, stating the underlying condition last"
+  },
+  {
+   "fieldname": "column_break_20",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Gender",
+   "options": "\nMale\nFemale",
+   "reqd": 1
+  },
+  {
+   "fieldname": "deceased_nationality",
+   "fieldtype": "Link",
+   "label": "Nationality",
+   "options": "Nationality",
+   "precision": "1",
+   "reqd": 1
+  },
+  {
+   "fieldname": "hospital_other",
+   "fieldtype": "Data",
+   "label": "Hospital / Other",
+   "reqd": 1
+  },
+  {
+   "fieldname": "deceased_occupation",
+   "fieldtype": "Data",
+   "label": "Occupation",
+   "reqd": 1
+  },
+  {
+   "fieldname": "hospitalization_period",
+   "fieldtype": "Data",
+   "label": "Hospitalization Period"
+  },
+  {
+   "fieldname": "significant_conditions",
+   "fieldtype": "Small Text",
+   "label": "Other significant conditions contributing to death, but not related to the disease or condition causing it"
+  },
+  {
+   "fieldname": "column_break_29",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_33",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "supporting_documents_section",
+   "fieldtype": "Section Break",
+   "label": "Other Supporting Documents"
+  },
+  {
+   "fieldname": "column_break_53",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "statement__affidavit_from_2_witnesses",
+   "fieldtype": "Attach",
+   "label": "Statement / Affidavit from 2 Witnesses"
+  },
+  {
+   "fieldname": "identity_document_of_witness_1",
+   "fieldtype": "Attach",
+   "label": "Identity Document of Witness 1"
+  },
+  {
+   "fieldname": "column_break_57",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "identity_document_of_witness_2",
+   "fieldtype": "Attach",
+   "label": "Identity Document of Witness 2"
+  },
+  {
+   "fieldname": "confirmation_letter_from_kgosi",
+   "fieldtype": "Attach",
+   "label": "Letter of Confirmation of Death from Kgosi"
+  },
+  {
+   "fieldname": "declaration_section",
+   "fieldtype": "Section Break",
+   "label": "Declaration"
+  },
+  {
+   "default": "0",
+   "fieldname": "declaration",
+   "fieldtype": "Check",
+   "label": "I certify that the information furnished in this application is correct."
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Death Registration",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Death Registration",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "particulars_of_next_of_kin_section",
+   "fieldtype": "Section Break",
+   "label": "Particulars of Next of Kin"
+  },
+  {
+   "fieldname": "relative_full_name",
+   "fieldtype": "Data",
+   "label": "Full Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "relative_nationaity",
+   "fieldtype": "Link",
+   "label": "Nationality",
+   "options": "Nationality"
+  },
+  {
+   "fieldname": "relationship",
+   "fieldtype": "Data",
+   "label": "Relationship"
+  },
+  {
+   "fieldname": "relative_identity",
+   "fieldtype": "Data",
+   "label": "Identity / Passport Number"
+  },
+  {
+   "fieldname": "relative_address",
+   "fieldtype": "Data",
+   "label": "Physical Address"
+  },
+  {
+   "fieldname": "identity_document_of_declarant",
+   "fieldtype": "Attach",
+   "label": "Identity Document"
+  },
+  {
+   "fieldname": "death_notification_tear_off",
+   "fieldtype": "Attach",
+   "label": "Death Notification tear-off"
+  },
+  {
+   "fieldname": "statement__affidavit_from_declarant",
+   "fieldtype": "Attach",
+   "label": "Statement / Affidavit from Declarant"
+  },
+  {
+   "fieldname": "relative_dob",
+   "fieldtype": "Date",
+   "label": "Date of Birth"
+  },
+  {
+   "fieldname": "date_of_death",
+   "fieldtype": "Date",
+   "label": "Date of Death",
+   "reqd": 1
+  },
+  {
+   "fieldname": "payment_details_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Payment Details",
+   "read_only": 1
+  },
+  {
+   "fieldname": "application_fee",
+   "fieldtype": "Currency",
+   "label": "Application Fee"
+  },
+  {
+   "default": "Stripe-IoT Communications",
+   "fieldname": "payment_gateway",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Payment Gateway",
+   "options": "Payment Gateway",
+   "read_only": 1
+  },
+  {
+   "default": "BWP",
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Currency",
+   "options": "Currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "payment_url",
+   "fieldtype": "Small Text",
+   "hidden": 1,
+   "label": "Payment Url",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-07-03 16:00:44.568413",
+ "modified_by": "Administrator",
+ "module": "Deaths",
+ "name": "Death Registration",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Officer",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Applicant",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,192 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-07-01 18:39:35.685868",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "mobile_wallet_section",
+  "orange_money",
+  "html_3",
+  "column_break_4",
+  "my_zaka",
+  "html_6",
+  "column_break_7",
+  "smega",
+  "html_9",
+  "creditdebit_card_section",
+  "visa",
+  "html_12",
+  "payment_details_section",
+  "application_number",
+  "application_fee",
+  "payer_name",
+  "payer_surname",
+  "email",
+  "doctype_name",
+  "payment_url",
+  "currency",
+  "payment_gateway"
+ ],
+ "fields": [
+  {
+   "fieldname": "mobile_wallet_section",
+   "fieldtype": "Section Break",
+   "label": "Mobile Wallet"
+  },
+  {
+   "fieldname": "orange_money",
+   "fieldtype": "Button",
+   "label": "Orange Money"
+  },
+  {
+   "fieldname": "html_3",
+   "fieldtype": "HTML",
+   "options": "<img height=\"184\" src=\"https://iotcomms.co.bw/api/paymentGateway/orange_money.png\" width=\"274\">"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "my_zaka",
+   "fieldtype": "Button",
+   "label": "MyZaka"
+  },
+  {
+   "fieldname": "html_6",
+   "fieldtype": "HTML",
+   "options": "<img height=\"184\" src=\"https://iotcomms.co.bw/api/paymentGateway/my_zaka.jpg\" width=\"274\">"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "smega",
+   "fieldtype": "Button",
+   "label": "Smega"
+  },
+  {
+   "fieldname": "html_9",
+   "fieldtype": "HTML",
+   "options": "<img height=\"184\" src=\"https://iotcomms.co.bw/api/paymentGateway/smega.jpg\" width=\"274\">"
+  },
+  {
+   "fieldname": "creditdebit_card_section",
+   "fieldtype": "Section Break",
+   "label": "Credit/Debit Card"
+  },
+  {
+   "fieldname": "visa",
+   "fieldtype": "Button",
+   "label": "Visa"
+  },
+  {
+   "fieldname": "html_12",
+   "fieldtype": "HTML",
+   "options": "<img src=\"https://iotcomms.co.bw/api/paymentGateway/visa_mastercard_americanexpress.jpg\">"
+  },
+  {
+   "fieldname": "payment_details_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Payment details",
+   "read_only": 1
+  },
+  {
+   "fieldname": "application_number",
+   "fieldtype": "Data",
+   "label": "Application Number"
+  },
+  {
+   "fieldname": "application_fee",
+   "fieldtype": "Data",
+   "label": "Application Fee"
+  },
+  {
+   "fieldname": "payment_url",
+   "fieldtype": "Data",
+   "label": "Payment Url"
+  },
+  {
+   "default": "BWP",
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "Currency",
+   "options": "Currency"
+  },
+  {
+   "default": "Stripe-IoT Communications",
+   "fieldname": "payment_gateway",
+   "fieldtype": "Link",
+   "label": "Payment Gateway",
+   "options": "Payment Gateway"
+  },
+  {
+   "fieldname": "payer_name",
+   "fieldtype": "Data",
+   "label": "Payer Name"
+  },
+  {
+   "fieldname": "payer_surname",
+   "fieldtype": "Data",
+   "label": "Payer Surname"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Payer email"
+  },
+  {
+   "fieldname": "doctype_name",
+   "fieldtype": "Data",
+   "label": "Reference doctype"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2022-07-03 13:46:04.547940",
+ "modified_by": "Administrator",
+ "module": "Births and Deaths Registration",
+ "name": "Payment Options",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "Applicant",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "Officer",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

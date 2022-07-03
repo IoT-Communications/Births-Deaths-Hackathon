@@ -1,0 +1,50 @@
+{
+ "cards": [
+  {
+   "card": "Pending Compliance Check"
+  },
+  {
+   "card": "Ready for Payment"
+  },
+  {
+   "card": "Paid"
+  },
+  {
+   "card": "Approved"
+  }
+ ],
+ "charts": [
+  {
+   "chart": "Monthly Registrations",
+   "width": "Full"
+  },
+  {
+   "chart": "Gender",
+   "width": "Half"
+  },
+  {
+   "chart": "District",
+   "width": "Half"
+  },
+  {
+   "chart": "Birth Status",
+   "width": "Half"
+  },
+  {
+   "chart": "Results of Delivery",
+   "width": "Half"
+  }
+ ],
+ "creation": "2022-07-01 15:13:16.872654",
+ "dashboard_name": "Births",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2022-07-01 15:43:04.175536",
+ "modified_by": "Administrator",
+ "module": "Births",
+ "name": "Births",
+ "owner": "Administrator"
+}
